@@ -1,0 +1,55 @@
+.estimated {
+  display: flex;
+  justify-content: center;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  color: var(--clr-white);
+  background-color: var(--clr-black);
+  padding: 1em;
+
+  &__details {
+    position: relative;
+    width: 1024px;
+    padding: 0 2em;
+  }
+
+  &__title {
+    margin-bottom: 0.5em;
+  }
+
+  &__list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+  }
+
+  &__list-item {
+    display: flex;
+    gap: 0.5em;
+  }
+
+  &__yearly-price {
+    font-size: 2.5em;
+  }
+
+  &__monthly-price {
+    color: var(--clr-gray-100)
+  }
+
+  &__close {
+    position: absolute;
+    top: 0;
+    right: 2em;
+  }
+}
+
+@media (max-width: 768px) {
+  .estimated {
+    &__details {
+      padding: 0;
+    }
+  }
+}

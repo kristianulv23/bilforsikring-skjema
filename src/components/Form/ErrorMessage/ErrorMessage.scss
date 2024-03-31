@@ -1,0 +1,21 @@
+.error-message {
+  max-width: 30rem;
+  padding: 1em;
+  border-radius: 2px;
+  background-color: var(--clr-red);
+  color: var(--clr-white);
+
+  &__title {
+    font-size: 1.25rem;
+    margin-bottom: 0.5em;
+  }
+
+  &__list {
+    margin-left: 1em;
+    padding: 0 1em;
+  }
+
+  &__list-item:not(:last-child) {
+    margin-bottom: 1em;
+  }
+}

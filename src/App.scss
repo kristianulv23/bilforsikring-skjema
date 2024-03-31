@@ -1,0 +1,17 @@
+.app {
+  max-width: 1024px;
+  margin: 3em auto;
+  padding: 0 2em;
+
+  &__description {
+    max-width: 52ch;
+    margin-bottom: 1em;
+  }
+}
+
+@media (max-width: 768px) {
+  .app {
+    margin: 1em auto;
+    padding: 0 1em;
+  }
+}

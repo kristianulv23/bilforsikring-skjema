@@ -1,0 +1,18 @@
+:root {
+  --clr-red: #BD5251;
+  --clr-blue: #3A7CA5;
+  
+  --clr-black: #000000;
+  --clr-black-50: #333333;
+  
+  --clr-white: #FFFFFF;
+  
+  --clr-gray-50: #787878;
+  --clr-gray-100: #B3B3B3;
+  --clr-gray-200: #E0E0E0;
+  
+  --radius-small: 2px;
+  --radius-medium: 4px;
+
+  --box-shadow-focus-visible: 0 0 0 2px var(--clr-white), 0 0 0 4px var(--clr-blue);
+}
