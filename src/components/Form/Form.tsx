@@ -24,10 +24,19 @@ const Form = ({ onSubmit, children, methods }: FormProps<FormSchemaInputType>) =
         formState: { isSubmitting },
     } = methods;
 
+    const handleFormSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+        if (isSubmitting) {
+            e.preventDefault();
+            return;
+        }
+
+        handleSubmit(onSubmit)(e);
+    };
+
     return (
         <FormProvider {...methods}>
             <form
-                onSubmit={handleSubmit(onSubmit)}
+                onSubmit={handleFormSubmit}
                 className="form"
             >
                 {children}

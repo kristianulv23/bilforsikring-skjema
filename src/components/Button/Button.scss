@@ -2,28 +2,24 @@
   --__button-background-color: var(--clr-black, #000000);
   --__button-color: var(--clr-white, #FFFFFF);
   --__button-border-color: var(--clr-black, #000000);
-  --__button-hover-background-color: var(--clr-black-50, rgba(0, 0, 0, 0.5));
 
   display: inline-flex;
   align-items: center;
   justify-content: center;
   font-size: 1rem;
   text-decoration: none;
-  background: var(--clr-black);
+  background-color: var(--clr-black);
   color: var(--clr-white);
   border: none;
   border-radius: 50px;
   margin: 0;
   padding: 0.75em 1.25em;
-  cursor: pointer;
-  box-shadow: 0px 0px 0px 1px var(--clr-white), 
-              0px 0px 0px 0px var(--clr-black);
   transition: box-shadow 0.25s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  cursor: pointer;
   
   &:hover {
-    box-shadow: 0px 0px 0px 1px var(--clr-white), 
-                0px 0px 0px 2px var(--clr-black);
-    scale: 1.05;
+    box-shadow: 0px 0px 0px 2px var(--clr-white), 
+                0px 0px 0px 4px var(--clr-black);
   }
   
   &--secondary {
@@ -31,7 +27,7 @@
     --__button-color: var(--clr-black);
     --__button-border-color: var(--clr-black);
 
-    background: var(--__button-background-color);
+    background-color: var(--__button-background-color);
     color: var(--__button-color);
     border: 1px solid var(--__button-border-color);
   }
@@ -39,5 +35,4 @@
   &:where(.button[aria-disabled="true"]) {
     cursor: not-allowed;
   }
-
 }
